@@ -36,11 +36,11 @@ h6 {
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
-p {
-  margin-bottom: 1.25rem;
-}
 a {
   text-decoration: none;
+}
+p {
+  margin-bottom: 1.25rem;
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
@@ -82,4 +82,7 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.rich {
+  background: var(--primaryColor);
 }
