@@ -24,13 +24,21 @@ const Blog = ({ data }) => {
         )
       },
       "embedded-entry-block": node => {
+        const { title, image, text } = node.data.target.fields
+
         return (
           <div>
             <br />
             <br />
             <br />
             <br />
-            <h1>this is other post</h1>
+            <h1>this is other post : {title["en-Us"]}</h1>
+            {/* <img
+              width="400"
+              src={image["en-Us"].fields.file["en-Us"].url}
+              alt=""
+            /> */}
+            {documentToReactComponents(text["en-Us"])}
             <br />
             <br />
             <br />
